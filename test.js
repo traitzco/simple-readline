@@ -1,5 +1,8 @@
 //       reference: https://stackoverflow.com/questions/9781218/how-to-change-node-jss-console-font-color
 // further reading: https://www.npmjs.com/package/chalk
+//                  https://www.youtube.com/watch?v=L8CDt1J3DAw
+//                  https://www.youtube.com/watch?v=_oHByo8tiEY
+
 
 // made: TraitzCo.
 // license: free-use
@@ -51,6 +54,9 @@ let returnCode = (string) => {
 var newStringParts = [];
 let stringToColors = (string) => {
   switch (string) {
+    case "black":
+      return `\x1b[30m${string}`
+    break;
     case "red":
         return `\x1b[31m${string}`
       break;
@@ -66,14 +72,11 @@ let stringToColors = (string) => {
     case "purple":
         return `\x1b[35m${string}`
       break;
-    case "black":
-        return `\x1b[30m${string}`
+    case "teal":
+        return `\x1b[36m${string}`
       break;
     case "white":
         return `\x1b[37m${string}`
-      break;
-    case "teal":
-        return `\x1b[36m${string}`
       break;
     default:
         for(let i = 0; i < string.length; i++){
