@@ -1,3 +1,4 @@
+// reference: https://stackoverflow.com/questions/9781218/how-to-change-node-jss-console-font-color
 
 process.stdout.write("\rtype some stuff & hit enter...");
 process.stdout.write("\n\r.\r");
