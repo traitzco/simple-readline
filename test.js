@@ -81,6 +81,7 @@ let stringToColors = (string) => {
           const thing = returnCode(yes);
           newStringParts.push(thing);
         }
+        newStringParts.push('\x1b[0m');
         let tie = newStringParts.join("")
         return tie;
       break;
