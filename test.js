@@ -1,6 +1,9 @@
 //       reference: https://stackoverflow.com/questions/9781218/how-to-change-node-jss-console-font-color
 // further reading: https://www.npmjs.com/package/chalk
 
+// made: TraitzCo.
+// license: free-use
+
 process.stdout.write("\rtype some stuff & hit enter...");
 process.stdout.write("\n\r.\r");
 
