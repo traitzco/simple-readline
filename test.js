@@ -46,14 +46,41 @@ let returnCode = (string) => {
 }
 var newStringParts = [];
 let stringToColors = (string) => {
-
-  for(let i = 0; i < string.length; i++){
-    const yes = string[i];
-    const thing = returnCode(yes);
-    newStringParts.push(thing);
+  switch (string) {
+    case "red":
+        return `\x1b[31m${string}`
+      break;
+    case "green":
+        return `\x1b[32m${string}`
+      break;
+    case "yellow":
+        return `\x1b[33m${string}`
+      break;
+    case "blue":
+        return `\x1b[34m${string}`
+      break;
+    case "purple":
+        return `\x1b[35m${string}`
+      break;
+    case "black":
+        return `\x1b[30m${string}`
+      break;
+    case "white":
+        return `\x1b[37m${string}`
+      break;
+    case "teal":
+        return `\x1b[36m${string}`
+      break;
+    default:
+        for(let i = 0; i < string.length; i++){
+          const yes = string[i];
+          const thing = returnCode(yes);
+          newStringParts.push(thing);
+        }
+        let tie = newStringParts.join("")
+        return tie;
+      break;
   }
-  let tie = newStringParts.join("")
-  return tie;
 }
 
 let clearNewStringParts = () => {
