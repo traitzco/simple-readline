@@ -1,5 +1,6 @@
 //       reference: https://stackoverflow.com/questions/9781218/how-to-change-node-jss-console-font-color
-// further reading: https://www.npmjs.com/package/chalk
+// further reading: https://www.samanthaming.com/tidbits/40-colorful-console-message/
+//                  https://www.npmjs.com/package/chalk
 //                  https://www.youtube.com/watch?v=L8CDt1J3DAw
 //                  https://www.youtube.com/watch?v=_oHByo8tiEY
 
